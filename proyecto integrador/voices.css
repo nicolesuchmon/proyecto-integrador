@@ -1,0 +1,54 @@
+.opciones {
+  background-color: white;
+  text-decoration: none;
+  color: darkgray;  
+}
+.artistas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+body {
+    background-color: rgb(14, 1, 1);
+}
+
+h2 {
+    color: dodgerblue;
+    text-shadow: dodgerblue;
+    text-decoration: none;
+    
+}
+p {
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+}
+.artistas2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: inherit;
+    width: 500px;
+    
+}
+
+.artistas3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h1 {
+    color: whitesmoke;
+    background-color: rgb(16, 62, 100);
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+header {
+    text-decoration: none;
+}
+.i {
+    color: cornsilk;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

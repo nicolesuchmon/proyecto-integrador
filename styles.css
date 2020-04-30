@@ -1,8 +1,12 @@
-.opciones {
-  background-color: white;
-  color: black;
-  display: flex;
-  justify-content: space-around;  
+
+.opciones{
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 body {
     background-color: rgb(14, 1, 1);
@@ -40,8 +44,8 @@ p {
     height: 295;
 }
 h1 {
-    color: whitesmoke;
-    background-color: rgb(16, 62, 100);
+    color: rgb(250, 248, 248);
+    background-color:rgb(121, 113, 113);
     font-family: 'Cinzel', serif;
     text-align: center;
 }
@@ -54,7 +58,7 @@ header {
 }
 #artistas{
     background-color: rgb(178, 236, 91);
-    color: ivory;
+    color: rgb(136, 136, 118);
     width: 500px;
     height: 50px;
     text-align: center;
@@ -94,3 +98,32 @@ h2.tracks{
     width: 500px;
     height: 40px;
 }
+.logo{
+    border-radius: 70%;
+    width: 8%;
+}
+.concert{
+    width:100 ;
+
+}
+
+.dj{
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+  }
+
+.frase{
+    
+      
+        position: absolute;
+        padding: 10px;
+        left: 0;
+        right: 0;
+        color: rgb(20, 1, 1);
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        top: 60%;
+        font-size: 60px;
+    }

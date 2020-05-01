@@ -113,7 +113,7 @@ header {
     display: block;
     margin: 0 auto;
     height: 300px;
-    width: 50%;
+    width: 40%;
   }
 
 
@@ -198,7 +198,7 @@ p #container2{
 }
 
 footer{
-    background-color: rgb(50, 112, 153);
+    background-color: rgb(172, 93, 90);
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       height: 50px;
@@ -206,17 +206,56 @@ footer{
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 250px;
+     
+      
 } 
-.detalletrack{
-    display: flex;
-    flex-direction: column;
-    color: rgb(12, 12, 12);
-    background-color: rgb(130, 207, 194);
-    text-align: center;
-    width: max-content;
-    padding: 4px;
-    margin: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+
+.albumcamilo {
+    color: whitesmoke;
+    text-align:center;
     
-}
+   }
+   .titulosalbum {
+       font-size: 20px;
+     
+   }
+   .titulostrack{
+       font-size: 20px;
+   }
+   .albummain {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 4cm;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 600px;
+        height: 400px;
+   }
+   .trackmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4cm;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 600px;
+    height: 100px;
+   }
+   .trackjames{
+    color: whitesmoke;
+    text-align:center;
+   }
+   .artistaolivia{
+       color: whitesmoke;
+       text-align: center;
+   }
+   .artistamain{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 4cm;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 600px;
+    height: 300px;
+    font-size: x-large;
+   }

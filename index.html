@@ -8,53 +8,49 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7cb6333e44.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="funciones.js"></script>
     
 </head>
 <body>
     
     <header>
-      <div>   
-        <img src="img/WhatsApp Image 2020-04-30 at 07.16.55.jpeg" alt="logotipo" class="logo">
-        <strong class="frase">"Music is life"</strong>
+          <div>   
+    <img src="img/WhatsApp Image 2020-04-30 at 07.16.55.jpeg" alt="logotipo" class="logo">  
     </div>
         
         <p class="iconos">
            
-            <i class="fab fa-facebook">@voices</i>
-            <i class="fab fa-twitter-square">@voices</i>
-            <i class="fab fa-instagram">@voices</i>
+            <i class="fab fa-facebook">@lovelyvoices</i>
+            <i class="fab fa-twitter-square">@lovelyvoices</i>
+            <i class="fab fa-instagram">@lovelyvoices</i>
             
         </p>
         
         <p class="opciones">
           
-            <a href="barra herramientas/playlist.html" style="text-decoration: none;">Playlists</a>
-            <a href="barra herramientas/artistas.html" style="text-decoration: none;">Artistas</a>
-            <a href="barra herramientas/generos.html" style="text-decoration: none;">Generos</a>
-    </p>
+            <a id="playlist" href="barra herramientas/playlist.html" style="text-decoration: none;">Playlists</a>
+            <a id="playlist" href="index.html" style="text-decoration: none;">Home</a>
+        </p>
        
     </header>
    <br>
-    <h1> Lovely Voices</h1>
-    <br>
-     <img class=dj src= "img/top-dj-in-India.jpg"
-       width="60%"
-       
-     >
+    <h1 class="titulo"> Lovely Voices</h1> 
+     <img class=dj src= "img/top-dj-in-India.jpg">
+    
     <h2 id="artistas"> Escuchá a tus artistas favoritos</h2>
-    <div class="playlist">
+    <div class="container">
          
         <li>
-            <img class= "camilo" src="img/camilo.jpg" alt="">
-            <p>Camilo</p>
+            <img src="img/camilo.jpg" alt="">
+            <p> <a id="container" href="detalleartista.html">Camilo </a></p>
         </li>
         <li>
             <img src="img/olivia.jpg" alt="">
-            <p>Olivia O' Brien</p>
+            <p> <a id="container" href="detalleartista.html">Olivia O' Brien</a></p>
         </li>
        <li>
            <img src="img/sebastian yatra.jpg" alt="">
-           <p>Sebastian Yatra</p>
+           <p> <a id="container" href="detalleartista.html">Sebastian Yatra</a></p>
        </li>
     
     </div>
@@ -62,73 +58,43 @@
     <br>
     <br>
     
-    <div class="playlist 2">
-       
-       <li>
-           <img src="img/shakira.jpg" alt="">
-           <p>Shakira</p>
-       </li>
-       <li>
-           <img src="img/michael buble.jpg" alt="">
-           <p>Michael Bublé</p>
-       </li>
-       <li>
-           <img src="img/cami.jpg" alt="">
-           <p>Cami</p>
-       </li>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="playlist3">
-    <li>
-       <img src="img/thebox.jpg" alt="">
-       <p>Roddy Rich</p>
-    </li>
-    <li>
-       <img src="img/morat.jpeg" alt="">
-       <p>Morat</p>
-    </li>
-    <li>
-       <img src="img/karolg.jpg" alt="">
-       <p>Karol G</p>
-    </li>
-    </div>
-    </div>
 
-    <h2>Albumes Mas escuchados</h2>
-    <div id="container">
+    <h2 id="albumes">Albumes Mas escuchados</h2>
+    <div class="container1">
         <div>
             <img src="img/images.jpeg" alt="">
-            <p>La tribu, Camilo</p>
+            <p><a id="container1" href="detallealbum.html">La tribu, Camilo</a></p>
         </div>
         <div>
             <img src="img/albummorat.jpeg" alt="">
-           <p>Amor y sus efectos secundarios, Morat</p> 
+           <p> <a id="container1" href="detallealbum.html">Amor y sus efectos secundarios, Morat</a></p> 
         </div>
         <div>
             <img src="img/lanadelrey.jpeg" alt="">
-            <p>Honeymoon, Lana del Rey</p>
-
+            <p><a id="container1" href="detallealbum.html">Honeymoon, Lana del Rey</a></p>
         </div>
+    
     </div>
-    <h2 class="tracks">Tracks</h2>
-    <div id="container2">
+    <h2 id= "tracks">Los tracks más escuchados</h2>
+    <div class="container2">
         <div>
             <img src="img/supalonely.jpeg" alt="">
-            <p>Supalonely</p>
+            <p><a id="container2" href="detalletrack.html">Supalonely</a> </p>
         </div>
         <div>
             <img src="img/canibehim.jpeg" alt="">
-            <p>Can i be him</p>
+            <p> <a id="container2" href="detalletrack.html">Can i be him</a> </p>
         </div>
         <div>
             <img src="img/getyouthemoon.jpeg" alt="">
-            <p>Get you the moon</p>
+            <p><a id="container2" href="detalletrack.html">Get you the moon</a> </p>
         </div>
     </div>
-    <div class="footer" style="margin-bottom:0">
-        <p>Facundo Tabanera, Lucas Lee, Nicoles Suchmon</p>
+    <footer>
+         <div id="footer" style="margin-bottom:0">
+        <p>Facundo Tabanera, Lucas Lee, Nicole Suchmon</p>
       </div>
+    </footer>
+   
 </body>
 </html>

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7cb6333e44.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <script src="funciones.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/detallealbum.js"></script>
+    <script src="js/home.js"></script>
     
 </head>
 <body>
@@ -17,22 +19,36 @@
           <div>   
     <img src="img/WhatsApp Image 2020-04-30 at 07.16.55.jpeg" alt="logotipo" class="logo">  
     </div>
-        
-        <p class="iconos">
+        <div>
+            <p class="iconos">
            
-            <i class="fab fa-facebook">@lovelyvoices</i>
-            <i class="fab fa-twitter-square">@lovelyvoices</i>
+            <i class="fab fa-facebook">@lovelyvoices </i> 
+            <i class="fab fa-twitter-square"> @lovelyvoices</i>
             <i class="fab fa-instagram">@lovelyvoices</i>
             
-        </p>
-        
-        <p class="opciones">
+        </p> 
+        </div>
+       <div>
+           <p class="opciones">
           
             <a id="playlist" href="barra herramientas/playlist.html" style="text-decoration: none;">Playlists</a>
             <a id="playlist" href="index.html" style="text-decoration: none;">Home</a>
-        </p>
+            <a href="playlist.html">playlist</a>
+        </p> 
+       </div>
+        
+       
        
     </header>
+   
+    <section class="buscador">
+        <form action="tracks.html" method="GET">
+            <input type="text" class="buscadorinput" name="q" placeholder="Ejemplo: Bajo la mesa...">
+            <button type="submit" class="buscadorinput">Buscar</button> 
+        </form>
+      </section>
+   
+    </section>
    <br>
     <h1 class="titulo"> Lovely Voices</h1> 
      <img class=dj src= "img/top-dj-in-India.jpg">
@@ -90,6 +106,7 @@
             <p><a id="container2" href="detalletrack.html">Get you the moon</a> </p>
         </div>
     </div>
+    
     <footer>
          <div id="footer" style="margin-bottom:0">
         <p>Facundo Tabanera, Lucas Lee, Nicole Suchmon</p>

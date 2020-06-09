@@ -46,7 +46,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
         </div>
     </div>`
     }
-    let artists data.artists,data
+    let artists data.artistas
     let contenedorArtistas =document.querySelector("seccionartistas");
     for (const artista of artistas){
         contenedorArtistas.innerHTML += 

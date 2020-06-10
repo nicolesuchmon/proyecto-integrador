@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lovely Voices</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel">
     <script src="https://kit.fontawesome.com/7cb6333e44.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <script src="js/funciones.js"></script>
@@ -14,7 +14,7 @@
     <script src="js/home.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
     
 </head>
 <body>
@@ -23,12 +23,13 @@
           <div>   
     <img src="img/WhatsApp Image 2020-04-30 at 07.16.55.jpeg" alt="logotipo" class="logo">  
     </div>
-       
+        <h1 class="titulo"> Lovely Voices</h1> 
        <div>
            <p class="opciones">
           
             <a id="playlist" href="barra herramientas/playlist.html" style="text-decoration: none;">Playlists</a>
             <a id="playlist" href="index.html" style="text-decoration: none;">Home</a>
+            <a id="playlist" href="barra herramientas/generos.html">Géneros</a>
             
         </p> 
        </div>
@@ -39,19 +40,17 @@
     <section>
        <section class="buscador">
         <form action="tracks.html" method="GET">
-            <input type="text" class="buscadorinput" name="q" placeholder="Ejemplo: Bajo la mesa...">
+            <input type="text" class="buscadorinput" name="q" placeholder="Ejemplo: Bajo la mesa..." style="border-radius: 50px; padding: 10px; background-color: rgb(240, 240, 240); width: 369px; height: 32px;">
             <button type="submit" class="buscadorinput">Buscar</button> 
         </form>
        </section>
 
-    <h1 class="titulo"> Lovely Voices</h1> 
+   
     
     
    <br>
 
-
-
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 800px;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -62,24 +61,24 @@
     <!-- Wrapper for slides -->
     
 
-<div class="carousel-inner">
+     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/disccarrousel.jpeg" alt="Pioneerdj">
+        <img src="img/personamusica.jpg" alt="bose" style="height: 300px; width: fit-content;">
         <div class="carousel-caption">
             <h3>The best parties are those which have a beginning but doesnt have an end</h3>
         </div>
       </div>
   
       <div class="item">
-        <img src="img/personasmcarrousel.jpeg" alt="Personasmusica">
+        <img src="img/personamusicacarrousel.jpg" alt="Personasmusica" style="width: 800px;">
         <div class="carousel-caption">
             <h3>With music you can express all those feelings that cannot be said in words</h3>
         </div>
       </div>
   
-      <div class="item">
-        <img src="img/djcarrousel.jpeg" alt="Dj fiesta">
-        <div class="carrousel-caption">
+      <div class="item ">
+        <img src="img/pianocarrousel.png" alt="musica" style="width: 800px;">
+        <div class="carousel-caption">
             <h3>If there is music in your soul it is heard throughout the universe</h3>
         </div>
       </div>
@@ -103,24 +102,24 @@
    <h2 id="artistas"> Escuchá a tus artistas favoritos</h2>
     <div class="container">
          
-        <li>
+        <div>
             <img src="img/camilo.jpg" alt="">
             <p> <a id="container" href="detalleartista.html">Camilo </a></p>
-        </li>
-        <li>
+        </div>
+            
+        <div>
             <img src="img/olivia.jpg" alt="">
             <p> <a id="container" href="detalleartista.html">Olivia O' Brien</a></p>
-        </li>
-       <li>
+        </div>
+            
+       <div>
            <img src="img/sebastian yatra.jpg" alt="">
            <p> <a id="container" href="detalleartista.html">Sebastian Yatra</a></p>
-       </li>
+       </div>
+     
     
     </div>
-    <br>
-    <br>
-    <br>
-    
+  
 
     <h2 id="albumes">Albumes Mas escuchados</h2>
     <div class="container1">
@@ -155,26 +154,35 @@
     </div>
 
     </section>
+   <br>
+   <br>
    
    
     
     <footer>
+        <div id="footerEntero">
+
+            <div id="footer" style="margin-bottom:0" style="display: flex; flex-direction: column;" >
+        <p>Facundo Tabanera, Lucas Lee, Nicole Suchmon</p>
+        </div>
+        <br>
           <div>
             <p class="iconos">
-           
             <i class="fab fa-facebook">@lovelyvoices </i> 
             <i class="fab fa-twitter-square"> @lovelyvoices</i>
             <i class="fab fa-instagram">@lovelyvoices</i>
-            
-        </p> 
-        </div>
-        <div id="footer" style="margin-bottom:0">
-        <p>Facundo Tabanera, Lucas Lee, Nicole Suchmon</p>
-        
+           </p> 
+          </div>
+          <br>
+
          <div id="deezerlogo">
-             <img src="img/deezerlogo.jpeg" alt="">
+             <img src="img/deezer.png" alt="">
         </div>
-       </div>
+        </div>
+        
+    
+       
+       
     </footer>
    
 </body>

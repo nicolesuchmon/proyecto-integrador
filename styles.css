@@ -2,6 +2,7 @@
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+    
 }
 
 .opciones{
@@ -81,11 +82,14 @@ header {
 #artistas{
     background-color: rgb(89, 185, 165);
     color: rgb(240, 234, 211);
+    background-position: fixed;
     width: 500px;
     height: 40px;
     text-align: center;
     font-size: x-large;
+    text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 
@@ -187,7 +191,7 @@ p #container2{
 
 
 footer{
-    background-color: rgb(172, 93, 90);
+    
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       height: 50px;
@@ -256,10 +260,39 @@ footer{
        height: 300px;
    }
    .item img{
-       width: 1300px;
-       height: 500px;
+      
    }
-   
+   .carrousel-inner img {
+        width: 1400px;
+       height: 600px;
+   }
+   #myCarousel{
+       text-align: center;
+       margin: 0 auto;
+   }
+   #deezerlogo{
+       display: flex;
+       justify-content: end;
+       flex-direction: row;
+       border-radius: 100px;
+       width: 20px;
+       height: 80px;
+       
+   }
+   #footerEntero{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       align-content: center;
+       background-color: rgb(172, 93, 90);
+       color: whitesmoke;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 90px;
+      width: 100%;
+      align-items: flex-end;
+      justify-content: center;
+       
+   }
 
    @media only screen and (max-width: 768px) {
     .main{

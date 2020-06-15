@@ -1,73 +1,77 @@
-window.onload= function(){
 
 
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
-.then(function(response){
-    return response.json(); 
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
+    .then(function(respuesta){
+        return respuesta.json();
     })
-.then(function(data){
-    console.log(data);
-    let albumes= data.albumes.data
-    let artistas= document.querySelector("seccionalbumes");
-    for (const album of albumes){
+    .then(function(datos){
+        
+        //trabajo con los datos
+        let albums = datos.albums.data;
+        //capturamos al elemento html que queremos hacer innerHTML
+        let contenedorAlbums = document.querySelector('.container1');
+        //recorro el array y lo voy imprimiendo
+        for (const album of albums) {
+            //creen un contador e incrementenlo
+            //var a = 0;
+            //a++
+            //console.log(a)
+            contenedorAlbums.innerHTML += `<div>
+                                <h3> ${album.artist.name}</h3>
+                                <a href="detalleAlbum.html?id=${album.id}">
+                                    <img class= "contenedor" src="${album.cover_medium}" alt="">
+                                </a>
+                                <h4>  ${album.title} </h4>
+                            </div>`;
+       
+        }
 
-        albumes.innerHTML += 
-        ` <div class="container1">
-        <div>
-            <img src="img/images.jpeg" alt="">
-            <p><a id="container1" href="detallealbum.html">La tribu, Camilo</a></p>
-        </div>
-        <div>
-            <img src="img/albummorat.jpeg" alt="">
-           <p> <a id="container1" href="detallealbum.html">Amor y sus efectos secundarios, Morat</a></p> 
-        </div>
-        <div>
-            <img src="img/lanadelrey.jpeg" alt="">
-            <p><a id="container1" href="detallealbum.html">Honeymoon, Lana del Rey</a></p>
-        </div> `
-    } 
-    let tracks = data.tracks.data
-    let containertracks = document.querySelector ("secciontracks");
-    for (const track of tracks) {
-        tracks.innerHTML +=
-        `   <div class="container2">
-        <div>
-            <img src="img/supalonely.jpeg" alt="">
-            <p><a id="container2" href="detalletrack.html">Supalonely</a> </p>
-        </div>
-        <div>
-            <img src="img/canibehim.jpeg" alt="">
-            <p> <a id="container2" href="detalletrack.html">Can i be him</a> </p>
-        </div>
-        <div>
-            <img src="img/getyouthemoon.jpeg" alt="">
-            <p><a id="container2" href="detalletrack.html">Get you the moon</a> </p>
-        </div>
-    </div>`
-    }
-    let artists data.artistas
-    let contenedorArtistas =document.querySelector("seccionartistas");
-    for (const artista of artistas){
-        contenedorArtistas.innerHTML += 
-        ` <div class="container">
-         
-        <li>
-            <img src="img/camilo.jpg" alt="">
-            <p> <a id="container" href="detalleartista.html">Camilo </a></p>
-        </li>
-        <li>
-            <img src="img/olivia.jpg" alt="">
-            <p> <a id="container" href="detalleartista.html">Olivia O' Brien</a></p>
-        </li>
-       <li>
-           <img src="img/sebastian yatra.jpg" alt="">
-           <p> <a id="container" href="detalleartista.html">Sebastian Yatra</a></p>
-       </li>
-    
-    </div>`
-    }
-})
+        let artists = datos.artists.data;
+        //capturamos al elemento html que queremos hacer innerHTML
+        let contenedorArtistas = document.querySelector('.containerartist');
+        
+        //recorro el array y lo voy imprimiendo
+        for (const artist of artists) {
+            
+            //creen un contador e incrementenlo
+            //var a = 0;
+            //a++
+            //console.log(a)
+            contenedorArtistas.innerHTML += `<div>
+                                <h3> ${artist.name}</h3>
+                                <a href="detalleartista.html?id=${artist.id}">
+                                    <img class= "contenedor" src="${artist.picture_medium}" alt="">
+                                </a>
+                                <h4>  ${artist.type}a </h4>
+                            </div>`
+       
+        }
+        let tracks = datos.tracks.data;
+        let contenedorTracks = document.querySelector('.container2')
+    var datos = 0
+    for (const track of tracks)  {
+       
+             datos= datos + 1;
+        contenedorTracks.innerHTML += `<div>
+                    <a href="detalletrack.html?id=${track.id}">
+                        <img class= "contenedor" src="${track.album.cover_medium}" alt=""></a>
+                    <h4>  ${track.title_short} </h4>
+                   
+                    
+               </div>`
+               
+               if (datos > 11){
+                   break; 
+               }
+               
+            }
 
-    
-}
+
+
+        
+     
+    })
+    .catch(function(error){
+        console.error(error);
+    })

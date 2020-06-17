@@ -10,7 +10,7 @@ window.onload = function(){
 
     for (let i = 0; i < 20; i++) {
         
-        document.querySelector("#playlist_entrenar").innerHTML += "<li>" + playlist.tracks.data[i].title + " - "+ playlist.tracks.data[i].artist.name +"</li>"   
+        document.querySelector("#playlist_entrenar").innerHTML += <li> <a href='detalletrack.html?id=" + playlist.tracks.data[i].id + "'>" + playlist.tracks.data[i].title + " </a> - <a href='detalleartista.html?id=" + playlist.tracks.data[i].artist.id + "'>"+ playlist.tracks.data[i].artist.name +"</a></li>
     }
     })
 //playlist estudiar
@@ -23,8 +23,7 @@ window.onload = function(){
 
     for (let i = 0; i < 20; i++) {
         
-        document.querySelector("#playlist_estudiar").innerHTML += "<li>" + playlist.tracks.data[i].title + " - "+ playlist.tracks.data[i].artist.name +"</li>"   
-    }
+        document.querySelector("#playlist_estudiar").innerHTML += <li> <a href='detalletrack.html?id=" + playlist.tracks.data[i].id + "'>" + playlist.tracks.data[i].title + " </a> - <a href='detalleartista.html?id=" + playlist.tracks.data[i].artist.id + "'>"+ playlist.tracks.data[i].artist.name +"</a></li>
     })
 //playlist manejar
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/7710941222")
@@ -36,8 +35,7 @@ window.onload = function(){
 
     for (let i = 0; i < 20; i++) {
         
-        document.querySelector("#playlist_manejar").innerHTML += "<li>" + playlist.tracks.data[i].title + " - "+ playlist.tracks.data[i].artist.name +"</li>"   
-    }
+        document.querySelector("#playlist_manejar").innerHTML += <li> <a href='detalletrack.html?id=" + playlist.tracks.data[i].id + "'>" + playlist.tracks.data[i].title + " </a> - <a href='detalleartista.html?id=" + playlist.tracks.data[i].artist.id + "'>"+ playlist.tracks.data[i].artist.name +"</a></li>
     })
 //playlist dormir
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/4063118602")
@@ -49,7 +47,7 @@ window.onload = function(){
 
     for (let i = 0; i < 20; i++) {
         
-        document.querySelector("#playlist_dormir").innerHTML += "<li>" + playlist.tracks.data[i].title + " - "+ playlist.tracks.data[i].artist.name +"</li>"   
+        document.querySelector("#playlist_dormir").innerHTML += <li> <a href='detalletrack.html?id=" + playlist.tracks.data[i].id + "'>" + playlist.tracks.data[i].title + " </a> - <a href='detalleartista.html?id=" + playlist.tracks.data[i].artist.id + "'>"+ playlist.tracks.data[i].artist.name +"</a></li>
     }
     })
 

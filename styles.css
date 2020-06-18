@@ -15,6 +15,7 @@
    display: flex;
    justify-content: space-evenly;
    font-size: x-large;
+   color: rgba(163, 243, 226, 0.781);
 }
 body {
     background-color: rgb(14, 1, 1);
@@ -69,6 +70,7 @@ h1.titulo{
     background-color: rgba(79, 233, 200, 0.781);
     font-family: 'Cinzel', serif;
     text-align: center;
+    font-size: 60px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
     border-color: rgba(163, 243, 226, 0.781);
@@ -83,10 +85,10 @@ header {
   margin-left: 10px;
 }
 #artistas{
-    background-color: rgb(132, 213, 219);
+    background-color: rgb(41, 153, 134);
     color: ghostwhite;
     background-position: fixed;
-    width: 500px;
+    width: 100%;
     height: 40px;
     text-align: center;
     font-size: x-large;
@@ -101,12 +103,12 @@ header {
 
 
 #albumes {
-    background-color: rgb(132, 213, 219);
+    background-color: rgb(142, 196, 233);
     color:ghostwhite;
     text-align: center;
     text-decoration: none;
     background-position: fixed;
-    width: 500px;
+    width: 100%;
     height: 40px;
     text-align: center;
     font-size: x-large;
@@ -122,7 +124,7 @@ header {
     text-align: center;
     text-decoration: none;
     background-position: fixed;
-    width: 500px;
+    width: 100%;
     height: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 30px;
@@ -220,11 +222,7 @@ footer{
       
 } 
 
-.albumcamilo {
-    color: whitesmoke;
-    text-align:center;
-    
-   }
+
    .titulosalbum {
        font-size: 20px;
      
@@ -232,43 +230,7 @@ footer{
    .titulostrack{
        font-size: 20px;
    }
-   .albummain {
-    
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 4cm;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        width: 600px;
-        height: 400px;
-   }
-   .trackmain{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 4cm;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 600px;
-    height: 100px;
-   }
-   .trackjames{
-    color: whitesmoke;
-    text-align:center;
-   }
-   .artistaolivia{
-       color: whitesmoke;
-       text-align: center;
-   }
-   .artistamain{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding: 4cm;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 600px;
-    height: 300px;
-    font-size: x-large;
-   }
+   
    
    .playlistIMG{
        width: 150px;
@@ -340,6 +302,13 @@ footer{
        justify-content: center;
        margin: 5px;
        padding: 10px;
+   }
+   .generos{
+       color: white;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       background-color: rgb(24, 194, 165);
+       height: 100%;
+       width: 100%;
    }
 
    @media only screen and (max-width: 768px) {

@@ -11,12 +11,14 @@
         let albums = datos.albums.data;
         //capturamos al elemento html que queremos hacer innerHTML
         let contenedorAlbums = document.querySelector('.container1');
+        var conteo= 0
         //recorro el array y lo voy imprimiendo
         for (const album of albums) {
             //creen un contador e incrementenlo
             //var a = 0;
             //a++
             //console.log(a)
+            conteo= conteo +1
             contenedorAlbums.innerHTML += `<div>
                                 <h3> ${album.artist.name}</h3>
                                 <a href="detalleAlbum.html?id=${album.id}">
@@ -24,20 +26,18 @@
                                 </a>
                                 <h4>  ${album.title} </h4>
                             </div>`;
+                        if (conteo > 8){
+                            break;
+                        }
        
         }
 
         let artists = datos.artists.data;
-        //capturamos al elemento html que queremos hacer innerHTML
         let contenedorArtistas = document.querySelector('.containerartist');
-        
-        //recorro el array y lo voy imprimiendo
+        var contador= 0
         for (const artist of artists) {
+            contador= contador + 1
             
-            //creen un contador e incrementenlo
-            //var a = 0;
-            //a++
-            //console.log(a)
             contenedorArtistas.innerHTML += `<div>
                                 <h3> ${artist.name}</h3>
                                 <a href="detalleartista.html?id=${artist.id}">
@@ -45,8 +45,13 @@
                                 </a>
                                 <h4>  ${artist.type}a </h4>
                             </div>`
+                if (contador>8){
+                    break;
+                }            
        
         }
+
+      
         let tracks = datos.tracks.data;
         let contenedorTracks = document.querySelector('.container2')
     var datos = 0
@@ -61,7 +66,7 @@
                     
                </div>`
                
-               if (datos > 11){
+               if (datos > 8){
                    break; 
                }
                

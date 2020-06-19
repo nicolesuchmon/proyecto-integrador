@@ -7,20 +7,29 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/' )
     .then(function(data){
         console.log(data)
 
-    let generos = data.generos.datos
+    let generos = data.data
     let contenedorData = document.querySelector('.generos')
+    console.log(generos);
+    var contador= 2
 
     for (const genero of generos)  {
-
+contador= contador 
              contenedorData.innerHTML +=
         `<div>
-                                <h3> ${genero.data.name}</h3>
+                                <h3> ${genero.name}</h3>
                                 
-                               <img  src="${genero.picture_medium}" alt="">
+                            
+                                 <a href="detallegenero.html?id=${genero.id}">
+                                   <img  class= ".img-genero" src="${genero.picture_medium}" alt="">
+                                </a>
+                
                                
-                                <h4>  ${genero.type} </h4>
+                               
   
                                </div>`;
+                               if (contador<=0 ){
+                                break;
+                            }                   
     }
 })
 

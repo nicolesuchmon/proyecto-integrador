@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../index.html">
+    <link href="../index.html">
     <link rel="stylesheet" href="../styles.css">
     <script src="../js/playlist.js"></script>
     <script src="https://kit.fontawesome.com/7cb6333e44.js" crossorigin="anonymous"></script>
@@ -12,6 +12,8 @@
     <title>Home</title>
     <style>
 
+
+        
         .cancion{
                 margin: 10px 0;
                 border: 2px solid white;
@@ -26,58 +28,76 @@
             color: black;
         }
 
-
+        
         a {
-            color: white!important;
+            
             text-decoration: none!important;
         }
 
     </style>
-
+    
 
 </head>
 <body>
     <header>
-        <div>
+        <div>   
           <img src="../img/WhatsApp Image 2020-04-30 at 07.16.55.jpeg" alt="" class="logo">
       </div>
     </header>
     <section>
-         <p class="iconos">
-        <i class="fab fa-facebook">@lovelyvoices</i>
-        <i class="fab fa-twitter-square">@lovelyvoices</i>
-        <i class="fab fa-instagram">@lovelyvoices</i>
-    </p>
-    <p class="opciones">
+ <p class="opciones"> 
         <a id="playlist" href="playlist.html" style="text-decoration: none;">Playlists</a>
         <a id="playlist" href="../index.html" style="text-decoration: none;">Home</a>
         <a id="playlist" href="generos.html" style="text-decoration: none;">Géneros</a>
     </p>
+    
+    <div class="PlaylistsF"> 
 
-    <div class="PlaylistsF">
-
-
+        
         <div id="cont-canciones">
-
+            
 
 
         </div>
 
 
     </div>
+
     </section>
+   
 
-  
+<footer>
+    <div id="footerEntero">
 
+        <div id="footer" style="margin-bottom:0" style="display: flex; flex-direction: row;" >
+    <p>Facundo Tabanera, Lucas Lee, Nicole Suchmon</p>
+    </div>
+    <br>
+      <div>
+        <p class="iconos">
+        <i class="fab fa-facebook">@lovelyvoices </i> 
+        <i class="fab fa-twitter-square"> @lovelyvoices</i>
+        <i class="fab fa-instagram">@lovelyvoices</i>
+       </p> 
+      </div>
+      <br>
 
-    <footer class="footer">
+     <div id="deezerlogo"> 
+         <img src="../img/deezer.png" alt="" >
+    </div>
+    </div>
+    
 
-            <p id="footer">Facundo Tabanera, Lucas Lee, Nicole Suchmon</p>
-    </footer>
-
+   
+   
+</footer>
+    
 
 </body>
 
-<script src="../js/playlist.js"></script>
+<script src="js/playlist.js"></script>
+<div class="spinner">
+    <div class="nk-spinner"></div>
+</div>
 
 </html>

@@ -206,8 +206,7 @@ p #container2{
 
 
 
-
-
+ 
 
 footer{
     
@@ -304,11 +303,64 @@ footer{
        padding: 10px;
    }
    .generos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    font-size: medium;
+   
+   }
+   .img-genero{
+       border-radius: 100%;
+   }
+   .artistadetallejs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    font-size: x-small;
+   }
+   .cancionArtista{
+    display: grid;
+    align-items: center;
+    text-decoration-line:none ;
+    color: white;
+    text-align: center;
+    
+   }
+   .cancionesartista{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+background-color:rgb(80, 99, 99);
+    padding: 5%;
+   }  
+   .cancionestitle{
        color: white;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       background-color: rgb(24, 194, 165);
-       height: 100%;
-       width: 100%;
+       font-size: larger;
+   }
+   .albumdetalletitle{
+  color: white;
+       font-size: larger;
+   }
+   .contenedorDA{
+       background-size: 10%;
+   }
+   .tituloartista{
+       font-size: large;
+   }
+   .linkalbum{
+       text-decoration: none;
+       color: whitesmoke;
    }
 
    @media only screen and (max-width: 768px) {
@@ -338,18 +390,18 @@ footer{
         display: flex;
     }
     .container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1;
         flex-wrap: wrap;
     }
     .container1{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1;
         flex-wrap: wrap;
     }
     .container2{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1;
         flex-wrap: wrap;
     }
 
@@ -365,5 +417,10 @@ footer{
        .contenedorartist{
            display: grid;
            grid-template-columns: min-content;
+       }
+       #footerentero{
+           position: fixed;
+          margin-bottom: 0%;
+          flex-wrap: wrap;
        }
    }

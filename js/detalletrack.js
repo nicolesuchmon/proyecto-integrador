@@ -10,8 +10,18 @@ let trackId = objetoQuery.get('id');
 // Accediendo al playlist en localstorage
 var playlist = localStorage.getItem('playlist');
 
+// Si es la primera vez usando playlist en el localStorage, creamos el array pero vacio para evitar errores de null
+if(playlist=='null' || playlist==null){
+    console.log('es null')
+    var playlist = []
+    localStorage.setItem('playlist', JSON.stringify(playlist));
+    var playlist = localStorage.getItem('playlist');
+}
+
 // Como se guarda en string, lo Parseamos
 playlist = JSON.parse(playlist)
+
+
 console.log(playlist)
 
 fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + trackId)

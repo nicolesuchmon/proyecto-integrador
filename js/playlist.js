@@ -36,7 +36,7 @@ var trackId = playlist[song]
             if(track.id != null){
                     html += '<a href="detalletrack.html?id='+track.id+'"><div class="cancion">'+track.title+'</div></a>'
                     console.log(html)
-                    cont.innerHTML = html
+                    
             }            
 
 

@@ -362,6 +362,21 @@ background-color:rgb(80, 99, 99);
        text-decoration: none;
        color: whitesmoke;
    }
+   .resultadosb{
+       text-decoration: none;
+       color: whitesmoke;
+       display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    font-size: medium;;
+   }
+   .resultadosbuscador{
+       display: grid;
+       grid-template-rows: 2;
+       align-content: center;
+   }
 
    @media only screen and (max-width: 768px) {
     .main{
